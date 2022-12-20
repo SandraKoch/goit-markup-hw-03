@@ -57,6 +57,8 @@ body {
 .page-header__container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 80px;
 }
 
 .navigation__list {
