@@ -32,15 +32,6 @@ body {
   color: #2196f3;
 }
 
-.footer-logo {
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19; /*31px*/
-  letter-spacing: 0.03em;
-}
-
 .link {
   text-decoration: none;
   color: inherit;
@@ -87,7 +78,6 @@ body {
 .nav-contact {
   color: var(--secondary-color);
   display: flex;
-  margin-right: 0;
   margin-left: auto;
 }
 
@@ -104,6 +94,11 @@ body {
   padding-right: 0;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .hero-section {
   background-color: var(--dark-background-color);
 }
@@ -115,14 +110,14 @@ body {
 }
 
 .hero-section__headline {
+  text-transform: uppercase;
   font-size: 44px;
   line-height: 1.36; /*60px*/
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   font-weight: 900;
-  padding-top: 200px;
-  margin: 0;
+  padding-top: 106px;
   margin-bottom: 30px;
 }
 
@@ -137,8 +132,12 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-bottom: 200px;
+  margin-bottom: 106px;
   padding: 10px 41px 10px 42px;
+}
+
+.our-assets {
+  display: flex;
 }
 
 .asset {
@@ -159,16 +158,22 @@ body {
   color: var(--secondary-color);
 }
 
+.services {
+  padding-top: 94px;
+}
 .services-headline {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 17; /*42px*/
+  line-height: 1.17; /*42px*/
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 
 .gallery {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .our-team {
@@ -181,11 +186,25 @@ body {
   line-height: 1, 17; /*42px*/
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 
 .team-cards {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
+
+.card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card__description {
+  padding: 30px 0;
+}
+
 .card__name {
   font-weight: 500;
   font-size: 16px;
@@ -194,20 +213,37 @@ body {
   letter-spacing: 0.03em;
 }
 
-.card__description {
+.card__job {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19; /*19px*/
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  padding-top: 10px;
 }
 
 .footer {
   background-color: var(--dark-background-color);
 }
+
+.footer-logo {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19; /*31px*/
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
 .footer-logo__span {
   color: #2196f3;
+}
+
+.footer-contact {
+  padding-bottom: 60px;
 }
 
 .footer-contact__item {
@@ -217,6 +253,10 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
   list-style: none;
+}
+
+.footer-contact__item + .footer-contact__item {
+  margin-top: 9px;
 }
 
 .address {

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <title>Hw-2-main-page</title>
+    <title>Hw-3-main-page</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -53,18 +54,18 @@
         </ul>
       </div>
     </header>
-    <header class="hero-section">
+    <header class="section hero-section">
       <div class="container hero-section__container">
         <h1 class="hero-section__headline">
-          EFEKTYWNE ROZWIĄZANIA <br />
-          DLA WASZEGO BIZNESU
+          Efektywne rozwiązania <br />
+          dla waszego biznesu
         </h1>
         <button type="button" class="hero-section__button">Zamów usługę</button>
       </div>
     </header>
     <main>
-      <section>
-        <div>
+      <section class="section">
+        <div class="container">
           <ul class="our-assets">
             <li class="asset">
               <h3 class="asset__name">LOREM IPSUM</h3>
@@ -96,7 +97,7 @@
             </li>
           </ul>
         </div>
-        <div class="services">
+        <div class="container services">
           <h2 class="services-headline">Czym się zajmujemy</h2>
           <ul class="gallery">
             <li>
@@ -127,84 +128,90 @@
         </div>
       </section>
       <section class="our-team">
-        <h2 class="our-team-headline">Nasz zespół</h2>
-        <ul class="team-cards">
-          <li>
-            <figure class="card">
-              <img
-                src="./images/person-1.jpg"
-                alt="Picture of John Doe"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h3 class="card__name">John Doe</h3>
-                <p class="card__description">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="card">
-              <img
-                src="./images/person-2.jpg"
-                alt="Picture of John Doe"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h3 class="card__name">John Doe</h3>
-                <p class="card__description">Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="card">
-              <img
-                src="./images/person-3.jpg"
-                alt="Picture of John Doe"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h3 class="card__name">John Doe</h3>
-                <p class="card__description">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="card">
-              <img
-                src="./images/person-4.jpg"
-                alt="Picture of John Doe"
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <h3 class="card__name">John Doe</h3>
-                <p class="card__description">UI Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+        <div class="section container">
+          <h2 class="our-team-headline">Nasz zespół</h2>
+          <ul class="team-cards">
+            <li>
+              <figure class="card">
+                <img
+                  src="./images/person-1.jpg"
+                  alt="Picture of John Doe"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="card__description">
+                  <h3 class="card__name">John Doe</h3>
+                  <p class="card__job">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="card">
+                <img
+                  src="./images/person-2.jpg"
+                  alt="Picture of John Doe"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="card__description">
+                  <h3 class="card__name">John Doe</h3>
+                  <p class="card__job">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="card">
+                <img
+                  src="./images/person-3.jpg"
+                  alt="Picture of John Doe"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="card__description">
+                  <h3 class="card__name">John Doe</h3>
+                  <p class="card__job">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="card">
+                <img
+                  src="./images/person-4.jpg"
+                  alt="Picture of John Doe"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="card__description">
+                  <h3 class="card__name">John Doe</h3>
+                  <p class="card__job">UI Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-logo">
-        <a class="link" href="./index.html"
-          ><span class="footer-logo__span">Web</span>Studio</a
-        >
+      <div class="container">
+        <div class="footer-logo">
+          <a class="link" href="./index.html"
+            ><span class="footer-logo__span">Web</span>Studio</a
+          >
+        </div>
+        <ul class="footer-contact">
+          <li class="footer-contact__item">
+            <address class="address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
+          </li>
+          <li class="footer-contact__item">
+            <a class="link" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="footer-contact__item">
+            <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
       </div>
-      <ul class="footer-contact">
-        <li class="footer-contact__item">
-          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-        </li>
-        <li class="footer-contact__item">
-          <a class="link" href="mailto:info@example.com">info@example.com</a>
-        </li>
-        <li class="footer-contact__item">
-          <a class="link" href="tel:+48111111111">+48 111 111 111</a>
-        </li>
-      </ul>
     </footer>
   </body>
 </html>
