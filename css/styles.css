@@ -8,6 +8,11 @@
   --grey-backgroud-color: #f5f4fa;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -294,10 +299,23 @@ body {
 .filters__button:focus {
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project {
   list-style: none;
+  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 60px) / 3);
+  margin-block-start: 0;
 }
 
 .project__name {
