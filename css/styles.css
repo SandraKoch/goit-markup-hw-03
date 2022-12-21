@@ -318,11 +318,16 @@ body {
   margin-block-start: 0;
 }
 
+.project__textbox {
+  padding: 20px 24px;
+}
+
 .project__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2; /*36px*/
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
 }
 
 .project__description {
