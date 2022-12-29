@@ -8,9 +8,9 @@
   --grey-backgroud-color: #f5f4fa;
 }
 
-img {
+.image {
   width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 .container {
