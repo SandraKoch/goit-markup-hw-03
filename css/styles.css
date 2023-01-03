@@ -8,20 +8,25 @@
   --grey-backgroud-color: #f5f4fa;
 }
 
+body {
+  color: var(--primary-color);
+  font-family: var(--main-font-family);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .image {
   width: 100%;
-  /* height: auto; */
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
   justify-content: center;
-}
-
-body {
-  color: var(--primary-color);
-  font-family: var(--main-font-family);
 }
 
 .logo {
